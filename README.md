@@ -21,7 +21,7 @@
 | `brand-system/luxreal-brand-design/SKILL.md` | Skill 入口与执行指令 |
 | `brand-system/luxreal-brand-design/references/` | 品牌规则、设计流程、验收标准、Tokens、模板插槽及 VIS |
 | `brand-system/luxreal-brand-design/assets/logos/` | 官方 Logo 原始文件 |
-| `brand-system/luxreal-brand-design/assets/fronts/` | 字体文件 |
+| `brand-system/luxreal-brand-design/assets/fonts/` | 字体文件 |
 | `brand-system/luxreal-brand-design/agents/` | Skill 展示信息与默认调用提示 |
 | `brand-system/luxreal-brand-design/scripts/` | 资源完整性校验脚本 |
 
