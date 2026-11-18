@@ -1,0 +1,114 @@
+{
+  "brandSource": "LuxReal_Brand_System.md",
+  "brandSourceVersion": "0.2",
+  "brandSourceDate": "2026-11-17",
+  "brandSourceSha256": "6b7ff2b8780c1a00ba3a3f08d369ead6cb9db980c986e434f11702c3af305543",
+  "packagedDate": "2026-11-18",
+  "visManual": {
+    "path": "references/vis-manual.pdf",
+    "sha256": "a9ed164b4ca02279e7c4ca7eeceb868261f8158076808ea984db310d51c68746"
+  },
+  "fonts": {
+    "family": "HarmonyOS Sans SC",
+    "availability": "not_provided",
+    "licenseStatus": "not_provided"
+  },
+  "logos": [
+    {
+      "path": "assets/logos/反白-01.png",
+      "sha256": "427d00d76196ea13b6137c747a8d539d34de84d1b629350507ff397d6cf71f01",
+      "pixelWidth": 2420,
+      "pixelHeight": 596,
+      "role": "standard-inverse",
+      "defaultAllowed": true
+    },
+    {
+      "path": "assets/logos/反白-02.png",
+      "sha256": "6af25c414daed538ff279889bd9f2f33f39fc21aeb101019478a9ebd2743ed2b",
+      "pixelWidth": 633,
+      "pixelHeight": 811,
+      "role": "standard-vertical-inverse",
+      "defaultAllowed": false
+    },
+    {
+      "path": "assets/logos/资源 10@3x.png",
+      "sha256": "c9c1f23da4415264f16b1af7013936a157a998f6145ded31cf3700b153db9433",
+      "pixelWidth": 2909,
+      "pixelHeight": 658,
+      "role": "standard",
+      "defaultAllowed": true
+    },
+    {
+      "path": "assets/logos/资源 13@3x.png",
+      "sha256": "d735efe6022a22e8f18011cb31e5fec788ce7ec030be8db1895fb1f148ee4843",
+      "pixelWidth": 875,
+      "pixelHeight": 1086,
+      "role": "unclassified",
+      "defaultAllowed": false
+    },
+    {
+      "path": "assets/logos/资源 14@3x.png",
+      "sha256": "e2384597d670110703eb4582c4abf92e0eb68980ff9ff0cb07ca73252c82a8b1",
+      "pixelWidth": 2909,
+      "pixelHeight": 658,
+      "role": "monochrome",
+      "defaultAllowed": false
+    },
+    {
+      "path": "assets/logos/资源 15@3x.png",
+      "sha256": "6a42c682ff1058dce85a5c01c460caf33db96ff5574c28dcf50d5fb6d3ebcc10",
+      "pixelWidth": 782,
+      "pixelHeight": 781,
+      "role": "extended-excluded",
+      "defaultAllowed": false
+    },
+    {
+      "path": "assets/logos/资源 16@3x.png",
+      "sha256": "3b17ca8efda4247d8094c5f9cae5dd50dfbddced96d03d450c75e5289e0840d1",
+      "pixelWidth": 782,
+      "pixelHeight": 782,
+      "role": "extended-excluded",
+      "defaultAllowed": false
+    },
+    {
+      "path": "assets/logos/资源 5@3x.png",
+      "sha256": "465d2fb1866a3726748de9fd6418d3bbc3439776043557359fa86f0620221fa4",
+      "pixelWidth": 2909,
+      "pixelHeight": 658,
+      "role": "extended-excluded",
+      "defaultAllowed": false
+    },
+    {
+      "path": "assets/logos/资源 6@3x.png",
+      "sha256": "775202d469a29996b860d14fa5f6c7e0a58f86e477cf083b74846a1765b78f6b",
+      "pixelWidth": 875,
+      "pixelHeight": 1085,
+      "role": "extended-excluded",
+      "defaultAllowed": false
+    },
+    {
+      "path": "assets/logos/资源 7@3x.png",
+      "sha256": "d977117820c0e97d4baa5b127d56fbfca44803dd8368ac53c8eea19f3746eaf9",
+      "pixelWidth": 875,
+      "pixelHeight": 1085,
+      "role": "extended-excluded",
+      "defaultAllowed": false
+    },
+    {
+      "path": "assets/logos/资源 8@3x.png",
+      "sha256": "d206552e2e9f0fe65729a3f70547fef94546b4c88fe6a0765fe676fd88efe170",
+      "pixelWidth": 2910,
+      "pixelHeight": 658,
+      "role": "extended-excluded",
+      "defaultAllowed": false
+    },
+    {
+      "path": "assets/logos/资源 9@3x.png",
+      "sha256": "a24e01320ade7fe58d374899edeb9cd40ddbbe0a2f3ddb9c4e2edf0f40e4854b",
+      "pixelWidth": 875,
+      "pixelHeight": 1085,
+      "role": "standard-vertical",
+      "defaultAllowed": false
+    }
+  ]
+}

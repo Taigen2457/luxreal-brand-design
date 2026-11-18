@@ -1,0 +1,339 @@
+{
+  "schemaVersion": "1.0",
+  "status": "proposed",
+  "canvasId": "portrait-3x4",
+  "width": 1080,
+  "height": 1440,
+  "coordinateConvention": "top-left; x,y,width,height in source px",
+  "criticalRect": {
+    "x": 86,
+    "y": 86,
+    "width": 908,
+    "height": 1268
+  },
+  "grid": {
+    "margin": 54,
+    "gap": 11,
+    "columns": 12,
+    "columnWidth": 70.91666666666667
+  },
+  "templates": [
+    {
+      "id": "feature-cinematic-v1",
+      "category": "feature_update",
+      "status": "Draft",
+      "defaultVariant": "default",
+      "requiredFacts": [
+        "officialFeatureName",
+        "approvedBenefit",
+        "usageEntry"
+      ],
+      "requiredAssets": [
+        "approvedFeatureVisual"
+      ],
+      "slots": {
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1440,
+          "fit": "cover",
+          "protectSubject": true
+        },
+        "logo": {
+          "anchor": "top-center",
+          "visibleY": 144,
+          "visibleHeight": 64,
+          "preserveRatio": true,
+          "clearSpaceSymbolHeightRatio": 1
+        },
+        "category": {
+          "x": 136,
+          "y": 836,
+          "width": 480,
+          "height": 52,
+          "optional": true,
+          "background": "{color.semantic.categoryTagBackground}"
+        },
+        "headline": {
+          "x": 136,
+          "y": 930,
+          "width": 808,
+          "height": 212,
+          "type": "headline"
+        },
+        "subheadline": {
+          "x": 136,
+          "y": 1160,
+          "width": 808,
+          "height": 100,
+          "type": "subheadline",
+          "optional": true
+        },
+        "cta": {
+          "x": 136,
+          "y": 1288,
+          "width": 480,
+          "height": 64,
+          "optional": true
+        }
+      },
+      "variants": {
+        "default": {},
+        "long-headline": {
+          "headline": {
+            "y": 884,
+            "height": 288,
+            "type": "longHeadline"
+          },
+          "category": {
+            "y": 800
+          },
+          "subheadline": {
+            "y": 1192,
+            "height": 100
+          },
+          "cta": {
+            "hidden": true
+          }
+        }
+      },
+      "compatibility": "real authorized output frame or approved demo visual; do not invent product results",
+      "layoutFamily": "Cinematic"
+    },
+    {
+      "id": "feature-studio-v1",
+      "category": "feature_update",
+      "status": "Draft",
+      "slots": {
+        "logo": {
+          "anchor": "top-left",
+          "visibleX": 136,
+          "visibleY": 144,
+          "visibleHeight": 64,
+          "preserveRatio": true,
+          "clearSpaceSymbolHeightRatio": 1
+        },
+        "headline": {
+          "x": 136,
+          "y": 300,
+          "width": 808,
+          "height": 212,
+          "type": "headline"
+        },
+        "hero": {
+          "x": 136,
+          "y": 560,
+          "width": 808,
+          "height": 520,
+          "fit": "contain",
+          "radius": 24
+        },
+        "subheadline": {
+          "x": 136,
+          "y": 1140,
+          "width": 808,
+          "height": 100,
+          "type": "subheadline"
+        },
+        "cta": {
+          "x": 136,
+          "y": 1288,
+          "width": 480,
+          "height": 64,
+          "optional": true
+        }
+      },
+      "variants": [
+        "default"
+      ],
+      "compatibility": "use real UI/screenshot or comparison requiring full visibility; a tall screenshot may fail readability and require a different approved slot",
+      "layoutFamily": "Studio"
+    },
+    {
+      "id": "feature-editorial-v1",
+      "category": "feature_update",
+      "status": "Draft",
+      "defaultVariant": "default",
+      "requiredFacts": [
+        "officialFeatureName",
+        "approvedBenefit",
+        "usageEntry"
+      ],
+      "requiredAssets": [
+        "approvedFeatureVisual"
+      ],
+      "slots": {
+        "logo": {
+          "anchor": "top-left",
+          "visibleY": 144,
+          "visibleHeight": 64,
+          "preserveRatio": true,
+          "clearSpaceSymbolHeightRatio": 1,
+          "visibleX": 136
+        },
+        "category": {
+          "x": 136,
+          "y": 300,
+          "width": 245,
+          "height": 52,
+          "type": "tag",
+          "optional": true,
+          "background": "{color.semantic.categoryTagBackground}"
+        },
+        "headline": {
+          "x": 136,
+          "y": 384,
+          "width": 245,
+          "height": 320,
+          "type": "editorialHeadline"
+        },
+        "subheadline": {
+          "x": 136,
+          "y": 752,
+          "width": 245,
+          "height": 100,
+          "type": "subheadline",
+          "optional": true
+        },
+        "hero": {
+          "x": 464,
+          "y": 300,
+          "width": 480,
+          "height": 904,
+          "fit": "cover",
+          "protectSubject": true
+        },
+        "cta": {
+          "x": 136,
+          "y": 1288,
+          "width": 480,
+          "height": 64,
+          "optional": true
+        }
+      },
+      "variants": [
+        "default"
+      ],
+      "compatibility": "requires a short headline fitting the narrow column and an authorized vertical composition; UI screenshots must not lose necessary details",
+      "layoutFamily": "Editorial"
+    },
+    {
+      "id": "feature-gallery-v1",
+      "category": "feature_update",
+      "status": "Draft",
+      "defaultVariant": "default",
+      "requiredFacts": [
+        "officialFeatureName",
+        "approvedBenefit",
+        "usageEntry"
+      ],
+      "requiredAssets": [
+        "approvedFeatureVisual"
+      ],
+      "slots": {
+        "logo": {
+          "anchor": "top-left",
+          "visibleY": 144,
+          "visibleHeight": 64,
+          "preserveRatio": true,
+          "clearSpaceSymbolHeightRatio": 1,
+          "visibleX": 136
+        },
+        "hero": {
+          "x": 218,
+          "y": 300,
+          "width": 644,
+          "height": 620,
+          "fit": "contain",
+          "protectSubject": true
+        },
+        "category": {
+          "x": 136,
+          "y": 968,
+          "width": 240,
+          "height": 52,
+          "type": "tag",
+          "optional": true,
+          "background": "{color.semantic.categoryTagBackground}"
+        },
+        "headline": {
+          "x": 136,
+          "y": 1056,
+          "width": 808,
+          "height": 160,
+          "type": "editorialHeadline",
+          "maxLines": 2
+        },
+        "subheadline": {
+          "x": 136,
+          "y": 1240,
+          "width": 808,
+          "height": 100,
+          "type": "subheadline",
+          "optional": true
+        }
+      },
+      "variants": [
+        "default"
+      ],
+      "compatibility": "authorized single object or artwork suitable for complete display; calm background and short title required",
+      "layoutFamily": "Gallery"
+    },
+    {
+      "id": "feature-metric-v1",
+      "category": "feature_update",
+      "status": "Draft",
+      "requiredFacts": [
+        "officialFeatureName",
+        "approvedBenefit",
+        "usageEntry",
+        "heroMetric",
+        "metricMeaning"
+      ],
+      "slots": {
+        "logo": {
+          "anchor": "top-center",
+          "visibleY": 144,
+          "visibleHeight": 64,
+          "preserveRatio": true,
+          "clearSpaceSymbolHeightRatio": 1
+        },
+        "headline": {
+          "x": 136,
+          "y": 300,
+          "width": 808,
+          "height": 212,
+          "type": "headline"
+        },
+        "metric": {
+          "x": 136,
+          "y": 548,
+          "width": 808,
+          "height": 232,
+          "type": "heroMetric"
+        },
+        "hero": {
+          "x": 136,
+          "y": 824,
+          "width": 808,
+          "height": 340,
+          "fit": "contain"
+        },
+        "subheadline": {
+          "x": 136,
+          "y": 1192,
+          "width": 808,
+          "height": 100,
+          "type": "subheadline"
+        }
+      },
+      "variants": [
+        "default"
+      ],
+      "compatibility": "metric is sourced, short, and relevant; no fabricated 4K, 0 cost, speedup or version promises",
+      "layoutFamily": "Metric"
+    }
+  ],
+  "version": "0.2.0"
+}

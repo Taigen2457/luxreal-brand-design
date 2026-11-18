@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "1.0",
+  "status": "mapped_from_vis",
+  "rootRelativeToProject": ".",
+  "coordinateConvention": "top-left; bounds [left,top,rightExclusive,bottomExclusive]; alpha > 0.01",
+  "entries": [
+    {
+      "id": "logo-standard-horizontal",
+      "path": "assets/logos/资源 10@3x.png",
+      "pixelWidth": 2909,
+      "pixelHeight": 658,
+      "visibleBounds": [
+        0,
+        0,
+        2909,
+        657
+      ],
+      "sha256": "c9c1f23da4415264f16b1af7013936a157a998f6145ded31cf3700b153db9433",
+      "backgroundProfile": "light",
+      "variant": "standard",
+      "defaultAllowed": true,
+      "note": "默认浅底完整组合",
+      "sourcePath": "LuxReal LOGO 4/资源 10@3x.png"
+    },
+    {
+      "id": "logo-standard-horizontal-inverse",
+      "path": "assets/logos/反白-01.png",
+      "pixelWidth": 2420,
+      "pixelHeight": 596,
+      "visibleBounds": [
+        20,
+        29,
+        2399,
+        567
+      ],
+      "sha256": "427d00d76196ea13b6137c747a8d539d34de84d1b629350507ff397d6cf71f01",
+      "backgroundProfile": "dark",
+      "variant": "standard-inverse",
+      "defaultAllowed": true,
+      "note": "默认深底完整组合",
+      "sourcePath": "LuxReal LOGO 4/反白-01.png"
+    },
+    {
+      "id": "logo-standard-vertical",
+      "path": "assets/logos/资源 9@3x.png",
+      "pixelWidth": 875,
+      "pixelHeight": 1085,
+      "visibleBounds": [
+        0,
+        0,
+        875,
+        1085
+      ],
+      "sha256": "a24e01320ade7fe58d374899edeb9cd40ddbbe0a2f3ddb9c4e2edf0f40e4854b",
+      "backgroundProfile": "light",
+      "variant": "standard-vertical",
+      "defaultAllowed": false,
+      "note": "竖版，非 P0 默认",
+      "sourcePath": "LuxReal LOGO 4/资源 9@3x.png"
+    },
+    {
+      "id": "logo-standard-vertical-inverse",
+      "path": "assets/logos/反白-02.png",
+      "pixelWidth": 633,
+      "pixelHeight": 811,
+      "visibleBounds": [
+        18,
+        25,
+        618,
+        756
+      ],
+      "sha256": "6af25c414daed538ff279889bd9f2f33f39fc21aeb101019478a9ebd2743ed2b",
+      "backgroundProfile": "dark",
+      "variant": "standard-vertical-inverse",
+      "defaultAllowed": false,
+      "note": "竖版反白，非 P0 默认",
+      "sourcePath": "LuxReal LOGO 4/反白-02.png"
+    },
+    {
+      "id": "logo-monochrome-horizontal",
+      "path": "assets/logos/资源 14@3x.png",
+      "pixelWidth": 2909,
+      "pixelHeight": 658,
+      "visibleBounds": [
+        0,
+        0,
+        2909,
+        658
+      ],
+      "sha256": "e2384597d670110703eb4582c4abf92e0eb68980ff9ff0cb07ca73252c82a8b1",
+      "backgroundProfile": "restricted",
+      "variant": "monochrome",
+      "defaultAllowed": false,
+      "note": "仅标准版对比不足等限定场景",
+      "sourcePath": "LuxReal LOGO 4/资源 14@3x.png"
+    }
+  ],
+  "excludedFromDefaultLogoSelection": [
+    "资源 5@3x.png",
+    "资源 6@3x.png",
+    "资源 7@3x.png",
+    "资源 8@3x.png",
+    "资源 15@3x.png",
+    "资源 16@3x.png"
+  ],
+  "note": "Paths resolve from the skill root. Original PNG bytes are unchanged. Only entries with defaultAllowed=true are defaults. Verify backgrounds and clear space.",
+  "rootRelativeToSkill": ".",
+  "sourceRootRelativeToProject": "LuxReal LOGO 4"
+}

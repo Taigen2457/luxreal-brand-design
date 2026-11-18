@@ -1,0 +1,429 @@
+{
+  "schemaVersion": "1.0",
+  "systemId": "luxreal-brand-system",
+  "version": "0.2.0",
+  "date": "2026-11-17",
+  "format": "project-specific-token-records",
+  "defaultCanvas": "portrait-3x4",
+  "defaultMode": "preview",
+  "rules": {
+    "brandName": "LuxReal",
+    "allowAiCss": false,
+    "allowAiPalette": false,
+    "allowAiLogoRedraw": false,
+    "allowSyntheticFontWeight": false,
+    "brandColorAreaRatioMax": 0.5,
+    "minLogoVisibleHeightPx": 20,
+    "logoClearSpaceSymbolHeightRatio": 1,
+    "formalExportRequiresPublishedTemplate": true,
+    "formalExportRequiresAvailableFonts": true,
+    "formalExportRejectsUnresolvedReferencedTokens": true,
+    "formalExportRejectsUnapprovedProposedReferencedTokens": true
+  },
+  "tokens": {
+    "color": {
+      "brand": {
+        "lightBlue": {
+          "value": "#3ED2FF",
+          "kind": "color",
+          "status": "vis_explicit",
+          "source": "VIS PDF 42,44"
+        },
+        "deepBlue": {
+          "value": null,
+          "kind": "color",
+          "status": "conflict",
+          "source": "VIS PDF 42,43",
+          "candidates": [
+            {
+              "hex": "#29256C",
+              "basis": "printed HEX"
+            },
+            {
+              "hex": "#004290",
+              "basis": "RGB 0,66,144 converted to HEX"
+            }
+          ]
+        }
+      },
+      "neutral": {
+        "offWhite": {
+          "value": "#F9F9FA",
+          "kind": "color",
+          "status": "vis_explicit",
+          "source": "VIS PDF 42,45"
+        },
+        "n100": {
+          "value": "#F4F4F4",
+          "kind": "color",
+          "status": "vis_explicit",
+          "source": "VIS PDF 42,45"
+        },
+        "n200": {
+          "value": "#EEEEEF",
+          "kind": "color",
+          "status": "vis_explicit",
+          "source": "VIS PDF 42,45"
+        },
+        "n300": {
+          "value": "#E3E3E4",
+          "kind": "color",
+          "status": "vis_explicit",
+          "source": "VIS PDF 42,45"
+        },
+        "n400": {
+          "value": "#CDCDCE",
+          "kind": "color",
+          "status": "vis_explicit",
+          "source": "VIS PDF 42,45"
+        },
+        "n500": {
+          "value": "#ACACAD",
+          "kind": "color",
+          "status": "vis_explicit",
+          "source": "VIS PDF 42,45"
+        },
+        "n600": {
+          "value": "#858686",
+          "kind": "color",
+          "status": "vis_explicit",
+          "source": "VIS PDF 42,45"
+        },
+        "n700": {
+          "value": "#535455",
+          "kind": "color",
+          "status": "vis_explicit",
+          "source": "VIS PDF 42,45"
+        },
+        "blackGray": {
+          "value": null,
+          "kind": "color",
+          "status": "conflict",
+          "source": "VIS PDF 42,45",
+          "previewValue": "#1B1D1E",
+          "reason": "RGB 27,29,30 conflicts with printed HEX #F9F9FA"
+        }
+      },
+      "conditional": {
+        "contrastBlack": {
+          "value": "#000000",
+          "kind": "color",
+          "status": "vis_conditional",
+          "source": "VIS PDF 40",
+          "condition": "Use where stronger contrast is needed; photo scrim is a proposed implementation."
+        },
+        "contrastWhite": {
+          "value": "#FFFFFF",
+          "kind": "color",
+          "status": "vis_conditional",
+          "source": "VIS PDF 40",
+          "condition": "Use in the same contrast profile as the supplied white-wordmark logo, without recoloring the logo."
+        }
+      },
+      "semantic": {
+        "accent": {
+          "value": "{color.brand.lightBlue}",
+          "kind": "alias",
+          "status": "derived",
+          "source": "brand mapping"
+        },
+        "textOnLight": {
+          "value": "{color.neutral.blackGray}",
+          "kind": "alias",
+          "status": "derived",
+          "source": "brand mapping"
+        },
+        "textOnDark": {
+          "value": "{color.neutral.offWhite}",
+          "kind": "alias",
+          "status": "derived",
+          "source": "brand mapping"
+        },
+        "textOnPhoto": {
+          "value": "{color.conditional.contrastWhite}",
+          "kind": "alias",
+          "status": "proposed",
+          "source": "social visual composition proposal; pair with original inverse logo"
+        },
+        "photoScrim": {
+          "value": "{color.conditional.contrastBlack}",
+          "kind": "alias",
+          "status": "proposed",
+          "source": "social visual composition proposal"
+        },
+        "previewDark": {
+          "value": "#1B1D1E",
+          "kind": "color",
+          "status": "provisional",
+          "source": "RGB conversion proposal only; do not treat as resolved blackGray"
+        },
+        "categoryTagBackground": {
+          "value": "#29256C",
+          "kind": "color",
+          "status": "user_confirmed",
+          "source": "User confirmation 2026-11-17; applies to all CategoryTag backgrounds"
+        }
+      }
+    },
+    "font": {
+      "family": {
+        "value": "HarmonyOS Sans SC",
+        "kind": "fontFamily",
+        "status": "vis_explicit",
+        "source": "VIS PDF 36-38"
+      },
+      "regular": {
+        "value": 400,
+        "kind": "fontWeight",
+        "status": "derived",
+        "source": "VIS Regular mapped to CSS; verify font metadata"
+      },
+      "medium": {
+        "value": 500,
+        "kind": "fontWeight",
+        "status": "derived",
+        "source": "VIS Medium mapped to CSS; verify font metadata"
+      },
+      "boldSmallOnly": {
+        "value": 700,
+        "kind": "fontWeight",
+        "status": "derived",
+        "source": "VIS Bold mapped to CSS; only small subheadings"
+      },
+      "letterSpacing": {
+        "value": 0,
+        "kind": "px",
+        "status": "proposed",
+        "source": "social typography supplement"
+      }
+    },
+    "type": {
+      "headline": {
+        "value": {
+          "fontSizePx": 88,
+          "lineHeightPx": 106,
+          "weight": "{font.medium}",
+          "maxLines": 2,
+          "minFontSizePx": 80,
+          "allowedFontSizePx": [
+            80,
+            88,
+            96
+          ]
+        },
+        "kind": "textStyle",
+        "status": "proposed",
+        "source": "social supplement"
+      },
+      "longHeadline": {
+        "value": {
+          "fontSizePx": 80,
+          "lineHeightPx": 96,
+          "weight": "{font.medium}",
+          "maxLines": 3
+        },
+        "kind": "textStyle",
+        "status": "proposed",
+        "source": "social supplement; separate layout variant"
+      },
+      "heroMetric": {
+        "value": {
+          "fontSizePx": 212,
+          "lineHeightPx": 232,
+          "weight": "{font.medium}",
+          "maxLines": 1,
+          "minFontSizePx": 160
+        },
+        "kind": "textStyle",
+        "status": "proposed",
+        "source": "parameter-led social composition proposal; needs real metric"
+      },
+      "subheadline": {
+        "value": {
+          "fontSizePx": 36,
+          "lineHeightPx": 50,
+          "weight": "{font.regular}",
+          "maxLines": 2
+        },
+        "kind": "textStyle",
+        "status": "proposed",
+        "source": "social supplement"
+      },
+      "tag": {
+        "value": {
+          "fontSizePx": 28,
+          "lineHeightPx": 36,
+          "weight": "{font.medium}",
+          "maxLines": 1
+        },
+        "kind": "textStyle",
+        "status": "proposed",
+        "source": "social supplement"
+      },
+      "smallSubheading": {
+        "value": {
+          "fontSizePx": 28,
+          "lineHeightPx": 38,
+          "weight": "{font.boldSmallOnly}",
+          "maxLines": 1
+        },
+        "kind": "textStyle",
+        "status": "proposed",
+        "source": "social supplement; preserves VIS weight hierarchy"
+      },
+      "caption": {
+        "value": {
+          "fontSizePx": 26,
+          "lineHeightPx": 36,
+          "weight": "{font.regular}",
+          "maxLines": 3
+        },
+        "kind": "textStyle",
+        "status": "proposed",
+        "source": "social supplement"
+      },
+      "editorialHeadline": {
+        "value": {
+          "fontSizePx": 64,
+          "lineHeightPx": 80,
+          "weight": "{font.medium}",
+          "maxLines": 4,
+          "minFontSizePx": 56
+        },
+        "kind": "textStyle",
+        "status": "proposed",
+        "source": "Editorial and Gallery composition proposal; dedicated slot only"
+      }
+    },
+    "grid": {
+      "marginShortSideRatio": {
+        "value": 0.05,
+        "kind": "ratio",
+        "status": "vis_explicit",
+        "source": "VIS PDF 49"
+      },
+      "columns": {
+        "value": 12,
+        "kind": "integer",
+        "status": "vis_explicit",
+        "source": "VIS PDF 50"
+      },
+      "gapMarginRatio": {
+        "value": 0.2,
+        "kind": "ratio",
+        "status": "vis_explicit",
+        "source": "VIS PDF 50"
+      },
+      "rounding": {
+        "value": "half-up",
+        "kind": "enum",
+        "status": "derived",
+        "source": "VIS nearest integer rounding"
+      },
+      "criticalInsetShortSideRatio": {
+        "value": 0.08,
+        "kind": "ratio",
+        "status": "proposed",
+        "source": "original social brief says 6%-8%; 8% of short side is implementation proposal"
+      }
+    },
+    "component": {
+      "logoHeight": {
+        "value": 64,
+        "kind": "px",
+        "status": "proposed",
+        "source": "social supplement; visible height"
+      },
+      "mediaFrameRadius": {
+        "value": 24,
+        "kind": "px",
+        "status": "proposed",
+        "source": "studio-showcase inset frame only"
+      },
+      "canvasRadius": {
+        "value": 0,
+        "kind": "px",
+        "status": "derived",
+        "source": "exported rectangular image; attachment platform card rounding excluded"
+      },
+      "pillRadius": {
+        "value": 999,
+        "kind": "px",
+        "status": "proposed",
+        "source": "optional category or CTA pill"
+      },
+      "tagPadding": {
+        "value": {
+          "x": 16,
+          "y": 8
+        },
+        "kind": "spacing",
+        "status": "proposed",
+        "source": "social supplement"
+      },
+      "ctaPadding": {
+        "value": {
+          "x": 24,
+          "y": 12
+        },
+        "kind": "spacing",
+        "status": "proposed",
+        "source": "social supplement"
+      },
+      "scrimBottom": {
+        "value": [
+          {
+            "position": 0,
+            "opacity": 0
+          },
+          {
+            "position": 0.45,
+            "opacity": 0
+          },
+          {
+            "position": 0.72,
+            "opacity": 0.65
+          },
+          {
+            "position": 1,
+            "opacity": 0.9
+          }
+        ],
+        "kind": "gradientOpacityStops",
+        "status": "proposed",
+        "source": "black photo scrim; 0 top, 1 bottom"
+      },
+      "thumbnail": {
+        "value": {
+          "width": 270,
+          "height": 360
+        },
+        "kind": "size",
+        "status": "proposed",
+        "source": "internal social thumbnail acceptance"
+      }
+    }
+  },
+  "previewOverrides": {
+    "color.neutral.blackGray": "#1B1D1E",
+    "color.brand.deepBlue": "#29256C"
+  },
+  "assets": {
+    "logoManifestSection": "13",
+    "fontAvailability": "not_provided",
+    "fontLicenseStatus": "not_provided",
+    "fontWeightMappingRequiresVerification": true
+  },
+  "resolverPolicy": {
+    "root": "tokens",
+    "aliasSyntax": "{dot.path}",
+    "aliasesInsideCompositeValues": true,
+    "rejectUnknownAlias": true,
+    "rejectAliasCycles": true,
+    "nullValueIsUnresolved": true,
+    "inheritReferencedStatus": true,
+    "previewOverridesAreNeverFormal": true,
+    "proposedValuesRequireExplicitTemplateApproval": true,
+    "approvalMustMatchTemplateVersionAndTokenValueHash": true
+  }
+}
