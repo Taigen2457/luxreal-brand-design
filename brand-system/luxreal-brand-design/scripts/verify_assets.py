@@ -13,7 +13,14 @@ def main():
     inventory = json.loads((refs / "resource-status.json").read_text())
     manifest = json.loads((refs / "logo-manifest.json").read_text())
     errors, indexed = [], {}
-    for item in inventory["logos"] + [inventory["visManual"]]:
+    resources = inventory["logos"] + [inventory["visManual"]]
+    font_count = 0
+    for family in inventory["fonts"].get("families", []):
+        resources.extend(family["files"])
+        font_count += len(family["files"])
+        if family.get("licensePath"):
+            resources.append({"path": family["licensePath"], "sha256": family["licenseSha256"]})
+    for item in resources:
         path = root / item["path"]
         if not path.is_file():
             errors.append(f"Missing: {item['path']}")
@@ -41,7 +48,7 @@ def main():
         print("\n".join(errors), file=sys.stderr)
         return 1
     print(f"PASS: {len(inventory['logos'])} original Logo PNGs and VIS verified.")
-    print("Fonts: " + inventory["fonts"]["availability"])
+    print(f"Fonts: {inventory['fonts']['availability']} ({font_count} font files; license files checked when indexed)")
     print("Not checked: layout quality, visible bounds, permissions or export readiness.")
     return 0
 
