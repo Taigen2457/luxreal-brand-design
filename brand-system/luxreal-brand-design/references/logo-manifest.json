@@ -104,6 +104,6 @@
     "资源 16@3x.png"
   ],
   "note": "Paths resolve from the skill root. Original PNG bytes are unchanged. Only entries with defaultAllowed=true are defaults. Verify backgrounds and clear space.",
-  "rootRelativeToSkill": ".",
-  "sourceRootRelativeToProject": "LuxReal LOGO 4"
+  "sourceRootRelativeToProject": "LuxReal LOGO 4",
+  "rootRelativeToSkill": "."
 }

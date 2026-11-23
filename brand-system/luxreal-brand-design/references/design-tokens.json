@@ -1,8 +1,8 @@
 {
   "schemaVersion": "1.0",
   "systemId": "luxreal-brand-system",
-  "version": "0.2.0",
-  "date": "2026-11-17",
+  "version": "0.4.0",
+  "date": "2026-11-19",
   "format": "project-specific-token-records",
   "defaultCanvas": "portrait-3x4",
   "defaultMode": "preview",
@@ -18,7 +18,9 @@
     "formalExportRequiresPublishedTemplate": true,
     "formalExportRequiresAvailableFonts": true,
     "formalExportRejectsUnresolvedReferencedTokens": true,
-    "formalExportRejectsUnapprovedProposedReferencedTokens": true
+    "formalExportRejectsUnapprovedProposedReferencedTokens": true,
+    "allowCreativeHeadlineFonts": true,
+    "creativeHeadlineFontRequiresPerUseApproval": false
   },
   "tokens": {
     "color": {
@@ -161,7 +163,81 @@
           "value": "#29256C",
           "kind": "color",
           "status": "user_confirmed",
-          "source": "User confirmation 2026-11-17; applies to all CategoryTag backgrounds"
+          "source": "User confirmation 2026-11-17; historical uniform Tag rule superseded by categoryTagPolicy 2026-11-19",
+          "deprecated": true,
+          "note": "Legacy uniform Tag background only. New category tags must resolve a paired category-specific background and foreground via categoryTagPolicy. Not a global default."
+        }
+      },
+      "categoryTags": {
+        "featureUpdate": {
+          "background": {
+            "value": "#3ED2FF",
+            "kind": "color",
+            "status": "derived",
+            "source": "User-directed category differentiation 2026-11-19; VIS lightBlue; existing independently confirmed Tag deep purple"
+          },
+          "foreground": {
+            "value": "#29256C",
+            "kind": "color",
+            "status": "derived",
+            "source": "Paired foreground selected for >=4.5:1 contrast on #3ED2FF; VIS lightBlue; existing independently confirmed Tag deep purple"
+          }
+        },
+        "promotion": {
+          "background": {
+            "value": "#6456B8",
+            "kind": "color",
+            "status": "derived",
+            "source": "User-directed category differentiation 2026-11-19; Designer-selected local muted-violet extension; conditional contrast white"
+          },
+          "foreground": {
+            "value": "#FFFFFF",
+            "kind": "color",
+            "status": "derived",
+            "source": "Paired foreground selected for >=4.5:1 contrast on #6456B8; Designer-selected local muted-violet extension; conditional contrast white"
+          }
+        },
+        "coCreation": {
+          "background": {
+            "value": "#29256C",
+            "kind": "color",
+            "status": "derived",
+            "source": "User-directed category differentiation 2026-11-19; Existing independently confirmed Tag deep purple; conditional contrast white"
+          },
+          "foreground": {
+            "value": "#FFFFFF",
+            "kind": "color",
+            "status": "derived",
+            "source": "Paired foreground selected for >=4.5:1 contrast on #29256C; Existing independently confirmed Tag deep purple; conditional contrast white"
+          }
+        },
+        "userShowcase": {
+          "background": {
+            "value": "#DCEFF5",
+            "kind": "color",
+            "status": "derived",
+            "source": "User-directed category differentiation 2026-11-19; Designer-selected local ice-blue extension; existing independently confirmed Tag deep purple"
+          },
+          "foreground": {
+            "value": "#29256C",
+            "kind": "color",
+            "status": "derived",
+            "source": "Paired foreground selected for >=4.5:1 contrast on #DCEFF5; Designer-selected local ice-blue extension; existing independently confirmed Tag deep purple"
+          }
+        },
+        "newsUpdate": {
+          "background": {
+            "value": "#535455",
+            "kind": "color",
+            "status": "derived",
+            "source": "User-directed category differentiation 2026-11-19; VIS neutral n700; conditional contrast white"
+          },
+          "foreground": {
+            "value": "#FFFFFF",
+            "kind": "color",
+            "status": "derived",
+            "source": "Paired foreground selected for >=4.5:1 contrast on #535455; VIS neutral n700; conditional contrast white"
+          }
         }
       }
     },
@@ -170,7 +246,8 @@
         "value": "HarmonyOS Sans SC",
         "kind": "fontFamily",
         "status": "vis_explicit",
-        "source": "VIS PDF 36-38"
+        "source": "VIS PDF 36-38",
+        "note": "VIS baseline and default body font; social headline families may override under typographyPolicy."
       },
       "regular": {
         "value": 400,
@@ -213,7 +290,8 @@
         },
         "kind": "textStyle",
         "status": "proposed",
-        "source": "social supplement"
+        "source": "social supplement",
+        "note": "Default template starting style; user-confirmed social headline typography overrides are allowed under typographyPolicy."
       },
       "longHeadline": {
         "value": {
@@ -224,7 +302,8 @@
         },
         "kind": "textStyle",
         "status": "proposed",
-        "source": "social supplement; separate layout variant"
+        "source": "social supplement; separate layout variant",
+        "note": "Default template starting style; user-confirmed social headline typography overrides are allowed under typographyPolicy."
       },
       "heroMetric": {
         "value": {
@@ -236,7 +315,8 @@
         },
         "kind": "textStyle",
         "status": "proposed",
-        "source": "parameter-led social composition proposal; needs real metric"
+        "source": "parameter-led social composition proposal; needs real metric",
+        "note": "Default template starting style; user-confirmed social headline typography overrides are allowed under typographyPolicy."
       },
       "subheadline": {
         "value": {
@@ -292,7 +372,8 @@
         },
         "kind": "textStyle",
         "status": "proposed",
-        "source": "Editorial and Gallery composition proposal; dedicated slot only"
+        "source": "Editorial and Gallery composition proposal; dedicated slot only",
+        "note": "Default template starting style; user-confirmed social headline typography overrides are allowed under typographyPolicy."
       }
     },
     "grid": {
@@ -410,9 +491,10 @@
   },
   "assets": {
     "logoManifestSection": "13",
-    "fontAvailability": "not_provided",
-    "fontLicenseStatus": "not_provided",
-    "fontWeightMappingRequiresVerification": true
+    "fontAvailability": "provided",
+    "fontLicenseStatus": "provided",
+    "fontWeightMappingRequiresVerification": true,
+    "resourceStatusPath": "references/resource-status.json"
   },
   "resolverPolicy": {
     "root": "tokens",
@@ -425,5 +507,72 @@
     "previewOverridesAreNeverFormal": true,
     "proposedValuesRequireExplicitTemplateApproval": true,
     "approvalMustMatchTemplateVersionAndTokenValueHash": true
+  },
+  "typographyPolicy": {
+    "status": "user_confirmed",
+    "source": "User confirmation 2026-11-19; social headlines may freely use creative typography",
+    "scope": "social_media",
+    "creativeRoles": [
+      "headline",
+      "longHeadline",
+      "editorialHeadline",
+      "heroMetric"
+    ],
+    "selection": "theme_driven_open_choice",
+    "allowMixedFamilies": true,
+    "allowCustomLettering": true,
+    "allowIntentionalTextEffects": true,
+    "defaultFontToken": "{font.family}",
+    "defaultWeightsAreFallbacks": true,
+    "overrideFields": [
+      "fontFamily",
+      "fontWeight",
+      "fontVariationSettings",
+      "fontStyle",
+      "fontSizePx",
+      "lineHeightPx",
+      "letterSpacingPx",
+      "maxLines",
+      "effects",
+      "letteringAssetId"
+    ],
+    "resolutionOrder": [
+      "explicit_role_typography",
+      "template_role_typography",
+      "tokens.type_role",
+      "tokens.font_defaults"
+    ],
+    "requiresRemeasurementAfterOverride": true,
+    "requiresReadableAccurateText": true,
+    "requiresAvailableFontOrLetteringAsset": true,
+    "requiresFontUsageRights": true,
+    "nonDefaultHeadlineFontIsNotAFormalExportBlocker": true,
+    "bodyDefaultFontToken": "{font.family}",
+    "officialLogoTypographyEditable": false
+  },
+  "categoryTagPolicy": {
+    "status": "derived",
+    "source": "User requested five content-specific Tag colors 2026-11-19; exact extension hex values selected in this design",
+    "scope": "category_tag_only",
+    "resolveBy": "canonicalCategoryLabel",
+    "labelToTokenKey": {
+      "功能上新": "featureUpdate",
+      "优惠活动": "promotion",
+      "共创计划": "coCreation",
+      "用户案例展示": "userShowcase",
+      "资讯更新": "newsUpdate"
+    },
+    "legacyLabelAliases": {
+      "用户案例": "用户案例展示"
+    },
+    "backgroundTokenPattern": "color.categoryTags.<key>.background",
+    "foregroundTokenPattern": "color.categoryTags.<key>.foreground",
+    "updateLabelAndColorPairTogether": true,
+    "opacity": 1,
+    "minTextContrastRatio": 4.5,
+    "extendsGlobalBrandPalette": false,
+    "unknownCategoryBehavior": "report_unmapped_category; do not guess a color",
+    "preserveExistingCategoryEnum": true,
+    "legacyToken": "color.semantic.categoryTagBackground"
   }
 }
